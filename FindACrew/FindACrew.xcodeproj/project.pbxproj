@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B3C7365022977B44008DA106 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7364F22977B44008DA106 /* AppDelegate.swift */; };
-		B3C7365222977B44008DA106 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7365122977B44008DA106 /* ViewController.swift */; };
 		B3C7365522977B44008DA106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7365322977B44008DA106 /* Main.storyboard */; };
 		B3C7365722977B45008DA106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C7365622977B45008DA106 /* Assets.xcassets */; };
 		B3C7365A22977B45008DA106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C7365822977B45008DA106 /* LaunchScreen.storyboard */; };
+		B3C7366822977D4C008DA106 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7366722977D4C008DA106 /* Person.swift */; };
+		B3C7366A22977D69008DA106 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7366922977D69008DA106 /* PersonController.swift */; };
+		B3C7366C22977D9E008DA106 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7366B22977D9E008DA106 /* PersonTableViewCell.swift */; };
+		B3C7366F22977DFE008DA106 /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7366E22977DFE008DA106 /* PersonSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3C7364C22977B44008DA106 /* FindACrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindACrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C7364F22977B44008DA106 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3C7365122977B44008DA106 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3C7365422977B44008DA106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C7365622977B45008DA106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C7365922977B45008DA106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C7365B22977B45008DA106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C7366722977D4C008DA106 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B3C7366922977D69008DA106 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		B3C7366B22977D9E008DA106 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		B3C7366E22977DFE008DA106 /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +61,11 @@
 		B3C7364E22977B44008DA106 /* FindACrew */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7366522977B8E008DA106 /* Networking */,
 				B3C7366422977B88008DA106 /* Model */,
+				B3C7366622977CA2008DA106 /* Model Controllers */,
+				B3C7366D22977DB8008DA106 /* Views */,
 				B3C7366222977B70008DA106 /* ViewControllers */,
+				B3C7366522977B8E008DA106 /* Networking */,
 				B3C7366322977B7D008DA106 /* StoryBoards */,
 			);
 			path = FindACrew;
@@ -76,7 +84,7 @@
 		B3C7366222977B70008DA106 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3C7365122977B44008DA106 /* ViewController.swift */,
+				B3C7366E22977DFE008DA106 /* PersonSearchTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 		B3C7366422977B88008DA106 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3C7366722977D4C008DA106 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +111,22 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B3C7366622977CA2008DA106 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7366922977D69008DA106 /* PersonController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		B3C7366D22977DB8008DA106 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7366B22977D9E008DA106 /* PersonTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C7365222977B44008DA106 /* ViewController.swift in Sources */,
+				B3C7366822977D4C008DA106 /* Person.swift in Sources */,
+				B3C7366F22977DFE008DA106 /* PersonSearchTableViewController.swift in Sources */,
+				B3C7366A22977D69008DA106 /* PersonController.swift in Sources */,
+				B3C7366C22977D9E008DA106 /* PersonTableViewCell.swift in Sources */,
 				B3C7365022977B44008DA106 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = FindACrew/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = FindACrew/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
