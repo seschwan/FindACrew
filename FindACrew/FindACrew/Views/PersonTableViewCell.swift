@@ -15,6 +15,16 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet weak var genderLbl:   UILabel!
     @IBOutlet weak var birthLbl:    UILabel!
     
+    var person: Person? {
+        didSet {
+            updateViews()
+        }
+    }
     
-    
+    private func updateViews() {
+        guard let person = self.person else { return }
+            self.nameLbl.text = person.name
+            self.genderLbl.text = "Gender: \(person.gender)"
+            self.birthLbl.text = "Birth Year: \(person.birthYear)"
+    }
 }

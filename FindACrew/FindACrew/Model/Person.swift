@@ -8,6 +8,18 @@
 
 import Foundation
 
-struct Person {
+// Key Decoding Strategy
+
+struct Person: Decodable {
+    let name:       String
+    let gender:     String
+    let birthYear:  String
+    
+    
+}
+
+
+struct PersonSearch: Decodable {
+    let results: [Person]
     
 }
